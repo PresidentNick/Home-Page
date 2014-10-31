@@ -1,0 +1,34 @@
+#! /usr/bin/perl
+
+use strict;
+use CGI qw/:standard/;
+use CGI::Carp qw(fatalsToBrowser warningsToBrowser);
+
+print header;
+print start_html(-title=>'Homework 2 Page',
+				 -style=> { -src => '360.css',
+				 			-type=> 'text/css'});
+
+print '<div id="content">';
+print h2("Enter your Text:");
+
+print start_form,
+	"What is the text? ",textfield('text'),p,
+	submit(-name=>'upper',
+		   -value=>'To Upper'),br,
+	submit(-name=>'reverse',
+		   -value=>'Reverse'),p,
+	end_form;
+
+if(param) {
+	if(param('upper')) {
+		my $text = uc param('text');
+		print h4($text);
+	}
+	elsif(param('reverse')) {
+		my $text = reverse(param('text'));
+		print h4($text);
+	}
+}
+print '</div>';
+print end_html;

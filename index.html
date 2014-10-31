@@ -1,0 +1,207 @@
+
+<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- <base href="http://www.cs.utexas.edu/~nickster/"><div style="background:#fff;border:1px solid #999;margin:-1px -1px 0;padding:0;"><div style="background:#ddd;border:1px solid #999;color:#000;font:13px arial,sans-serif;font-weight:normal;margin:12px;padding:8px;text-align:left">This is Google&#39;s cache of <a href="http://www.cs.utexas.edu/~nickster/" style="text-decoration:underline;color:#00c">http://www.cs.utexas.edu/~nickster/</a>. It is a snapshot of the page as it appeared on Oct 21, 2014 08:36:45 GMT. The <a href="http://www.cs.utexas.edu/~nickster/" style="text-decoration:underline;color:#00c">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222" style="text-decoration:underline;color:#00c">Learn more</a><br>Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.<br><br><div style="float:right"><a href="http://webcache.googleusercontent.com/search?q=cache:OL30A9h2LFIJ:www.cs.utexas.edu/~nickster/&amp;client=ubuntu-browser&amp;hl=en&amp;gl=us&strip=1" style="text-decoration:underline;color:#00c">Text-only version</a></div>
+<div>&nbsp;</div></div></div><div style="position:relative"> -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--<script src="//widget.battleforthenet.com/widget.min.js" async></script>-->
+<link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+<link rel='shortcut icon' 
+      type='image/x-icon' 
+      href='favicon.ico'>
+<title>Nick's Page</title>
+<style>
+h1{
+  font-family: Satisfy, cursive;
+  font-weight:normal;
+  font-size:45px;
+  padding-top: 60px;
+}
+
+p{
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  
+#plain {
+    border: 1px solid #4C3C1B;
+    padding: 5px;
+    background-color: #EFEECB;
+    }  
+
+#title {
+    text-align: center;
+  }
+  .red{
+   background: #CF3500;
+  }
+  .pink {
+  color: yellow;
+  }
+  #unclickable1 {
+    position: absolute;
+    top: 120px;
+    left: 500px;
+  }
+  #unclickable2 {
+    position: absolute;
+    top: 135px;
+    left: 500px;
+  }
+  #unclickable3 {
+    position: absolute;
+    top: 150px;
+    left: 500px;
+  }
+  #unclickable4 
+  {
+    position: absolute;
+    top: 150px;
+    left: 580px;
+  }
+  #unclickable5
+  {
+    position: absolute;
+    top: 135px;
+    left: 580px;
+  }
+  #unclickable6 
+  {
+    position: absolute;
+    top: 120px;
+    left: 580px;
+  }
+
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55477420-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+var MakeParagraphsRed=function() {
+  $("p").toggleClass("red");
+};
+var MakePink=function(){
+  $("em").toggleClass("pink")
+};
+var ParagraphClick = function() {
+  console.log("You clicked!");
+};
+var hidebuttons=function(){
+  $("#unclickable2").hide()
+  $("#unclickable3").hide()
+  $("#unclickable4").hide()
+  $("#unclickable5").hide()
+  $("#unclickable6").hide()
+};
+var hideshow1=function(){
+  $("#unclickable1").hide()
+  $("#unclickable2").show()
+};
+var hideshow2=function(){
+  $("#unclickable2").hide()
+  $("#unclickable3").show()
+};
+var hideshow3=function(){
+  $("#unclickable3").hide()
+  $("#unclickable4").show()
+};
+var hideshow4=function(){
+  $("#unclickable4").hide()
+  $("#unclickable5").show()
+};
+var hideshow5=function(){
+  $("#unclickable5").hide()
+  $("#unclickable6").show()
+};
+var hideshow6=function(){
+  $("#unclickable6").hide()
+  $("#unclickable1").show()
+};
+
+var Main=function() {
+  console.log("Ready to go!");
+  $("#redify").on("click", MakeParagraphsRed);
+  $("#pink").on("click", MakePink);
+  $("p").click(ParagraphClick);
+  $("#unclickable1").hover(hideshow1);
+  $("#unclickable2").hover(hideshow2);
+  $("#unclickable3").hover(hideshow3);
+  $("#unclickable4").hover(hideshow4);
+  $("#unclickable5").hover(hideshow5);
+  $("#unclickable6").hover(hideshow6);
+  hidebuttons();
+  img = Math.floor((Math.random()*10)+1);
+  img = img + ".png";
+  $("#back").attr("background", "backgrounds/" + img);
+};
+
+
+
+$(document).ready(Main);
+</script>
+<script type="text/javascript" src="konami.js"></script>
+
+</head>
+<body id="back">
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9745563; 
+var sc_invisible=1; 
+var sc_security="24e634f9"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/9745563/0/24e634f9/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+<div id='title'><h1>The title of Nick's page!</h1></div>
+
+<!--<input type="button" value="Click Me!!" id="unclickable1">
+<input type="button" value="Click Me!!" id="unclickable2">
+<input type="button" value="Click Me!!" id="unclickable3">
+<input type="button" value="Click Me!!" id="unclickable4">
+<input type="button" value="Click Me!!" id="unclickable5">
+<input type="button" value="Click Me!!" id="unclickable6">-->
+<input type="button" value="Annoying Button" id="otherbutton" style="position: absolute; top:  100px; left: 10px;" 
+onmouseover="style.top= Math.floor((Math.random()*100)+1) + 'px'; style.left= Math.floor((Math.random()*100)+1) + 'px'" onclick="style.top= Math.floor((Math.random()*100)+1) + 'px'; style.left= Math.floor((Math.random()*100)+1) + 'px'">
+    <h3>Greetings CS recruiters and all others! Welcome to my page.</h3>
+
+    <b> It has a picture. </b>
+    <br><img id='plain' src="nick.jpg" width="432" height="287"><br>
+    <p>This is the very first paragraph.  There are many paragraphs like it, but this one is mine.</p>
+  <br><p>This is the second paragraph.  Just because it's not <em>numerically</em> first does not make it a lesser paragraph.  We can't <em>all</em> come first.</p>
+
+<br>
+<input type="button" value="Make burnt orange" id="redify">
+<input type="button" value="highlight" id="pink">
+<br>
+<ul>
+<li><a href="http://extremegames-sns.appspot.com/">Play games that I helped make!</a></li><li><a href="https://docs.google.com/document/d/1ltV-MLMCO9X13owVirknrblUSyVbIGoYa7w0SOoZkTI/pub">My resume.</a> Feel free to hire me!</li>
+<li>Do you know the Konami code?  (WARNING: DO NOT enter the code if you experience epilepsy!!!)</li>
+<li>Don't like this background? Refresh the page!</li>
+<li>I was time magazine's <a href="person.png">person of the year</a> in 2006!!!</li>
+</ul>
+</body>
+</html>
