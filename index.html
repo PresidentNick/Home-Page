@@ -1,20 +1,48 @@
 
-<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- <base href="http://www.cs.utexas.edu/~nickster/"><div style="background:#fff;border:1px solid #999;margin:-1px -1px 0;padding:0;"><div style="background:#ddd;border:1px solid #999;color:#000;font:13px arial,sans-serif;font-weight:normal;margin:12px;padding:8px;text-align:left">This is Google&#39;s cache of <a href="http://www.cs.utexas.edu/~nickster/" style="text-decoration:underline;color:#00c">http://www.cs.utexas.edu/~nickster/</a>. It is a snapshot of the page as it appeared on Oct 21, 2014 08:36:45 GMT. The <a href="http://www.cs.utexas.edu/~nickster/" style="text-decoration:underline;color:#00c">current page</a> could have changed in the meantime. <a href="http://support.google.com/websearch/bin/answer.py?hl=en&amp;p=cached&amp;answer=1687222" style="text-decoration:underline;color:#00c">Learn more</a><br>Tip: To quickly find your search term on this page, press <b>Ctrl+F</b> or <b>⌘-F</b> (Mac) and use the find bar.<br><br><div style="float:right"><a href="http://webcache.googleusercontent.com/search?q=cache:OL30A9h2LFIJ:www.cs.utexas.edu/~nickster/&amp;client=ubuntu-browser&amp;hl=en&amp;gl=us&strip=1" style="text-decoration:underline;color:#00c">Text-only version</a></div>
-<div>&nbsp;</div></div></div><div style="position:relative"> -->
 <!DOCTYPE html>
-<html>
+<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
 <meta charset="UTF-8">
+<script src="fontpicker.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+var MakeParagraphsRed=function() {
+  $("p").toggleClass("red");
+};
+var MakePink=function(){
+  $("em").toggleClass("pink")
+};
+var ParagraphClick = function() {
+  console.log("You clicked!");
+};
+
+var Main=function() {
+  console.log("Ready to go!");
+  $("#redify").on("click", MakeParagraphsRed);
+  $("#pink").on("click", MakePink);
+  $("p").click(ParagraphClick);
+  setNum();
+  var link = getLink();
+  var CSS = getCSS();
+  document.getElementById("link").setAttribute("href",link);
+  document.getElementById("title").style.fontFamily=""+CSS+", cursive";
+  img = Math.floor((Math.random()*10)+1);
+  img = img + ".png";
+  $("#back").attr("background", "backgrounds/" + img);
+};
+
+
+
+$(document).ready(Main);
+</script>
 <!--<script src="//widget.battleforthenet.com/widget.min.js" async></script>-->
-<link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+<link id="link" href="" rel="stylesheet" />
 <link rel='shortcut icon' 
       type='image/x-icon' 
       href='favicon.ico'>
 <title>Nick's Page</title>
 <style>
 h1{
-  font-family: Satisfy, cursive;
   font-weight:normal;
   font-size:45px;
   padding-top: 60px;
@@ -77,7 +105,6 @@ p{
 
 </style>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -91,69 +118,7 @@ p{
 
 </script>
 
-<script>
-var MakeParagraphsRed=function() {
-  $("p").toggleClass("red");
-};
-var MakePink=function(){
-  $("em").toggleClass("pink")
-};
-var ParagraphClick = function() {
-  console.log("You clicked!");
-};
-var hidebuttons=function(){
-  $("#unclickable2").hide()
-  $("#unclickable3").hide()
-  $("#unclickable4").hide()
-  $("#unclickable5").hide()
-  $("#unclickable6").hide()
-};
-var hideshow1=function(){
-  $("#unclickable1").hide()
-  $("#unclickable2").show()
-};
-var hideshow2=function(){
-  $("#unclickable2").hide()
-  $("#unclickable3").show()
-};
-var hideshow3=function(){
-  $("#unclickable3").hide()
-  $("#unclickable4").show()
-};
-var hideshow4=function(){
-  $("#unclickable4").hide()
-  $("#unclickable5").show()
-};
-var hideshow5=function(){
-  $("#unclickable5").hide()
-  $("#unclickable6").show()
-};
-var hideshow6=function(){
-  $("#unclickable6").hide()
-  $("#unclickable1").show()
-};
 
-var Main=function() {
-  console.log("Ready to go!");
-  $("#redify").on("click", MakeParagraphsRed);
-  $("#pink").on("click", MakePink);
-  $("p").click(ParagraphClick);
-  $("#unclickable1").hover(hideshow1);
-  $("#unclickable2").hover(hideshow2);
-  $("#unclickable3").hover(hideshow3);
-  $("#unclickable4").hover(hideshow4);
-  $("#unclickable5").hover(hideshow5);
-  $("#unclickable6").hover(hideshow6);
-  hidebuttons();
-  img = Math.floor((Math.random()*10)+1);
-  img = img + ".png";
-  $("#back").attr("background", "backgrounds/" + img);
-};
-
-
-
-$(document).ready(Main);
-</script>
 <script type="text/javascript" src="konami.js"></script>
 
 </head>
