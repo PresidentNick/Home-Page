@@ -26,7 +26,7 @@ var Main=function() {
   var CSS = getCSS();
   document.getElementById("link").setAttribute("href",link);
   document.getElementById("title").style.fontFamily=""+CSS+", cursive";
-  img = Math.floor((Math.random()*10)+1);
+  img = Math.floor((Math.random()*11)+1);
   img = img + ".png";
   $("#back").attr("background", "backgrounds/" + img);
 };
@@ -149,24 +149,32 @@ alt="web analytics"></a></div></noscript>
 <input type="button" value="Click Me!!" id="unclickable4">
 <input type="button" value="Click Me!!" id="unclickable5">
 <input type="button" value="Click Me!!" id="unclickable6">-->
-<input type="button" value="Annoying Button" id="otherbutton" style="position: absolute; top:  100px; left: 10px;" 
+<input type="button" value="Annoying Button" id="otherbutton" style="position: absolute; top:  100px; left: 100px;" 
 onmouseover="style.top= Math.floor((Math.random()*100)+1) + 'px'; style.left= Math.floor((Math.random()*100)+1) + 'px'" onclick="style.top= Math.floor((Math.random()*100)+1) + 'px'; style.left= Math.floor((Math.random()*100)+1) + 'px'">
-    <h3>Greetings CS recruiters and all others! Welcome to my page.</h3>
-
-    <b> It has a picture. </b>
-    <br><img id='plain' src="nick.jpg" width="432" height="287"><br>
-    <p>This is the very first paragraph.  There are many paragraphs like it, but this one is mine.</p>
-  <br><p>This is the second paragraph.  Just because it's not <em>numerically</em> first does not make it a lesser paragraph.  We can't <em>all</em> come first.</p>
-
-<br>
-<input type="button" value="Make burnt orange" id="redify">
-<input type="button" value="highlight" id="pink">
-<br>
-<ul>
-<li><a href="http://extremegames-sns.appspot.com/">Play games that I helped make!</a></li><li><a href="https://docs.google.com/document/d/1ltV-MLMCO9X13owVirknrblUSyVbIGoYa7w0SOoZkTI/pub">My resume.</a> Feel free to hire me!</li>
-<li>Do you know the Konami code?  (WARNING: DO NOT enter the code if you experience epilepsy!!!)</li>
-<li>Don't like this background? Refresh the page!</li>
-<li>I was time magazine's <a href="person.png">person of the year</a> in 2006!!!</li>
-</ul>
+<div style="width: 40%; margin: 0px auto;">
+      <h3>Greetings CS recruiters and all others! Welcome to my page.</h3>
+  
+      <b> It has a picture of me.</b>
+      <br><img id='plain' src="nick.jpg" width="432" height="287"><br>
+      <p>This is the very first paragraph.  There are many paragraphs like it, but this one is mine.</p>
+    <br><p>This is the second paragraph.  Just because it's not <em>numerically</em> first does not make it a lesser paragraph.  We can't <em>all</em > come first.</p>
+  
+  <br>
+  <input type="button" value="Make burnt orange" id="redify">
+  <input type="button" value="highlight" id="pink">
+  <br>
+  <ul>
+    <li><a href="http://extremegames-sns.appspot.com/">Play games that I helped make!</a></li>
+    <li><a href="https://docs.google.com/document/d/1ltV-MLMCO9X13owVirknrblUSyVbIGoYa7w0SOoZkTI/pub">My resume.</a> Feel free to hire me!</li>
+    <li><a href="http://github.com/PresidentNick">My Github</a>. Check out my projects!</li>
+    <li>Do you know the Konami code? 
+    	<ul>
+    		<li>(WARNING: DO NOT enter the code if you experience epilepsy!!!)</li>
+    	</ul>
+    </li>
+    <li>Don't like this background or title font? Refresh the page!</li>
+    <li>I was time magazine's <a href="person.png">person of the year</a> in 2006!!!</li>
+  </ul>
+</div>
 </body>
 </html>
